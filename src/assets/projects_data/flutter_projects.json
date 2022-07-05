@@ -1,0 +1,36 @@
+{
+    "flutter_projects": [
+        {
+            "projectName": "Youtube Flutter Clone",
+            "description": "This project a simple YouTube clone made using the Flutter SDK. \nIt consist of the ",
+            "technologies": [
+                "flutter",
+                "dart"
+            ],
+            "featured": "",
+            "images": [
+                "public/images/youtube_flutter_clone/"
+            ],
+            "github": "https://github.com/desmond700/flutter_youtube_clone",
+            "created": 1629522000000
+        },
+        {
+            "projectName": "WhatsApp Flutter Clone",
+            "description": "This project a simple WhatsApp clone made using the Flutter SDK. \nIt consist of the ",
+            "technologies": [
+                "flutter",
+                "dart"
+            ],
+            "featured": "/images/projects/whatsapp_flutter_clone/Screenshot from 2022-05-29 17-11-33.png",
+            "images": [
+                "/images/projects/whatsapp_flutter_clone/Screenshot from 2022-05-29 17-11-33.png",
+                "/images/projects/whatsapp_flutter_clone/Screenshot from 2022-05-29 17-11-57.png",
+                "/images/projects/whatsapp_flutter_clone/Screenshot from 2022-05-29 17-12-07.png",
+                "/images/projects/whatsapp_flutter_clone/Screenshot from 2022-05-29 17-12-23.png",
+                "/images/projects/whatsapp_flutter_clone/Screenshot from 2022-05-29 17-12-51.png"
+            ],
+            "github": "https://github.com/desmond700/flutter_whatsapp_clone",
+            "created": 1637470800000
+        }
+    ]
+}

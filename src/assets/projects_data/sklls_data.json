@@ -1,0 +1,43 @@
+{
+    "Languages": [
+        {
+            "name": "Dart",
+            "knowledge": 75,
+            "imageName": "dart-programming-language.png"
+        },
+        {
+            "name": "Typescript",
+            "knowledge": 85,
+            "imageName": "typescript-programming-language.png"
+        },
+        {
+            "name": "SQL",
+            "knowledge": 70,
+            "imageName": "database-icon.png"
+        },
+        {
+            "name": "Golang",
+            "knowledge": 50,
+            "imageName": "go-programming-language.png"
+        }
+    ],
+    "Platforms": [
+        {
+            "name": "NodeJs",
+            "knowledge": 50,
+            "imageName": "node-js.png"
+        },
+        {
+            "name": "Flutter",
+            "knowledge": 50,
+            "imageName": "flutter.png"
+        }
+    ],
+    "Frontend frameworks": [
+        {
+            "name": "VueJs",
+            "knowledge": 66,
+            "imageName": "vuejs.png"
+        }
+    ]
+}
