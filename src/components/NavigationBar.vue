@@ -3,6 +3,7 @@ import { onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { Close } from "mdue";
 import type { GlobalColor } from "@/types";
+import SocialMediaButton from "./SocialMediaButton.vue";
 
 const props = withDefaults(
   defineProps<{
@@ -28,7 +29,7 @@ const navigationBar = ref<HTMLElement>();
 
 const globalColors = Array<GlobalColor>(
   { primary: "#1a4a70", secondary: "#5f809b", navElement: aboutNavItem },
-  { primary: "#385faa", secondary: "#748fc4", navElement: skillsNavItem },
+  { primary: "#06373A", secondary: "#1F5F5B", navElement: skillsNavItem },
   { primary: "#1a586b", secondary: "#5f8a97", navElement: projectsNavItem }
 );
 
@@ -133,11 +134,8 @@ defineExpose({
     <div id="navheading">
       <div id="navImgContainer">
         <div class="logo-outer-border">
-          <div id="logo">
-            <img
-              src="https://triosdevelopers.com/~D.Wallace/assets/images/15027583_1430471596982184_305908304077287745_n.jpg"
-              class="img-fluid"
-            />
+          <div id="logo-container">
+            <img src="/images/33467033.jpeg" class="logo" />
           </div>
         </div>
       </div>
@@ -149,33 +147,23 @@ defineExpose({
       </div>
     </div>
     <div class="social-media">
-      <a
-        href="https://github.com/desmond700"
-        target="_blank"
-        class="social-media-icon"
-      >
+      <SocialMediaButton :href="'https://github.com/desmond700'">
         <i class="fab fa-github"></i>
-      </a>
-      <a href="#" target="_blank" class="social-media-icon">
+      </SocialMediaButton>
+      <SocialMediaButton :href="'#'">
         <i class="fab fa-facebook-f"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/desmond-wallace-23a8ba122/"
-        target="_blank"
-        class="social-media-icon"
+      </SocialMediaButton>
+      <SocialMediaButton
+        :href="'https://www.linkedin.com/in/desmond-wallace-23a8ba122/'"
       >
         <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a
-        href="https://www.instagram.com/desmond_700/"
-        target="_blank"
-        class="social-media-icon"
-      >
+      </SocialMediaButton>
+      <SocialMediaButton :href="'https://www.instagram.com/desmond_700/'">
         <i class="fab fa-instagram"></i>
-      </a>
-      <a href="mailto:dwdeveloper4@gmail.com" class="social-media-icon">
+      </SocialMediaButton>
+      <SocialMediaButton :href="'mailto:dwdeveloper4@gmail.com'">
         <i class="fas fa-envelope"></i>
-      </a>
+      </SocialMediaButton>
     </div>
     <div id="nav-list-container">
       <div id="navlist">
@@ -279,7 +267,7 @@ p#career {
         background: var(--primary-color);
         box-shadow: 0 2px 6px #000;
 
-        #logo {
+        #logo-container {
           height: 100%;
           width: 100%;
           border-radius: 50%;
@@ -289,6 +277,10 @@ p#career {
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: contain;*/
+
+          img.logo {
+            max-width: 100%;
+          }
         }
       }
     }
@@ -300,33 +292,6 @@ p#career {
     align-items: center;
     // width: 100%;
     margin: 20px 10px 0 10px;
-
-    .social-media-icon {
-      display: flex;
-      align-items: center;
-      width: 24px;
-      height: 22px;
-      // padding: 5px;
-      // margin: 0 20px;
-      background-color: #fff;
-      color: var(--primary-color);
-      text-decoration: none;
-      border-radius: 4px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-
-      &:hover {
-        background-color: var(--primary-color);
-        text-decoration: none;
-
-        i {
-          color: #fff;
-        }
-      }
-
-      i {
-        margin: auto;
-      }
-    }
   }
 
   #nav-list-container {
@@ -345,7 +310,7 @@ p#career {
       #nav-item-indicator {
         position: absolute;
         height: 28px;
-        top: 3px;
+        top: 2px;
         right: -1px;
         background-color: #3594cb;
         border-top-left-radius: 17px;

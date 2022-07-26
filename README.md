@@ -1,6 +1,6 @@
-# my-porfolio
+# My Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my Portfolio Website which current only contains projects created using the Flutter Cross-platform developement framework.
 
 ## Recommended IDE Setup
 

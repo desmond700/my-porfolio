@@ -47,7 +47,10 @@ const toggleProjectDetails = ref(false);
     </div>
 
     <Teleport to="body">
-      <Overlay v-if="toggleProjectDetails">
+      <Overlay
+        v-if="toggleProjectDetails"
+        @on-close="toggleProjectDetails = false"
+      >
         <ProjectDetails
           :project="$props.project"
           @on-close="toggleProjectDetails = false"
@@ -66,14 +69,15 @@ const toggleProjectDetails = ref(false);
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;
+  z-index: 1;
 
   &:hover {
     box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.356);
   }
 
   img#featured-img {
-    width: auto;
     height: 100%;
+    width: 71.05px;
     border-radius: 4px;
     border: 1px solid rgb(221, 221, 221);
   }

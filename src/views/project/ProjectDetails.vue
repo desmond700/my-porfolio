@@ -58,6 +58,10 @@ const next = () => {
     <div id="project-description-container">
       <p id="project-name">{{ $props.project.projectName }}</p>
       <p id="project-description">{{ $props.project.description }}</p>
+      <button id="github-btn">
+        <i class="fab fa-github"></i>
+        <span id="label">View on Github</span>
+      </button>
       <div id="screenshots-container">
         <span
           class="screenshot-item"
@@ -93,7 +97,7 @@ const next = () => {
   border-radius: 5px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.54);
   background-color: #fff;
-  z-index: 10;
+  z-index: 3;
   overflow: hidden;
 
   #close-btn {
@@ -116,8 +120,9 @@ const next = () => {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    max-height: calc(100% - 40px);
-    margin: 20px 20px;
+    max-height: 100%;
+    padding: 15px 20px;
+    margin: 5px 0;
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -133,12 +138,25 @@ const next = () => {
       color: var(--primary-color);
     }
 
+    button#github-btn {
+      display: flex;
+      width: fit-content;
+      padding: 5px;
+      cursor: pointer;
+
+      #label {
+        margin-left: 4px;
+        font-size: 0.9em;
+      }
+    }
+
     #screenshots-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
       grid-template-rows: auto;
       gap: 10px;
       flex-grow: 1;
+      margin-top: 20px;
 
       .active {
         background-color: var(--primary-color);

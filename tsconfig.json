@@ -4,6 +4,7 @@
   "compilerOptions": {
     "resolveJsonModule": true,
     "baseUrl": ".",
+    "lib": ["esnext", "dom"],
     "paths": {
       "@/*": ["./src/*"]
     }

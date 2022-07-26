@@ -77,9 +77,9 @@ onMounted(() => {
           <button class="nav-item active">
             <span id="label">All ({{ projects.list.length }})</span>
           </button>
-          <button class="nav-item">
+          <!-- <button class="nav-item">
             <span id="label">Recent (0)</span>
-          </button>
+          </button> -->
         </div>
         <FilterDropdownList
           :filter="projects.filter"

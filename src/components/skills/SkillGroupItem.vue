@@ -61,7 +61,7 @@ defineProps<{
       justify-content: center;
       align-items: center;
       height: 100%;
-      background-color: var(--primary-color);
+      background-color: var(--secondary-color);
 
       #text {
         font-size: 0.8em;

@@ -45,7 +45,7 @@ const skillsData = skillsJson as SkillDataRecord;
     text-align: left;
     font-size: 2.2em;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
 }
 </style>
