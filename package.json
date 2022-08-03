@@ -1,6 +1,7 @@
 {
   "name": "my-porfolio",
   "version": "0.0.0",
+  "private": false,
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
