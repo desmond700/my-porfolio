@@ -7,18 +7,18 @@
                 "flutter",
                 "dart"
             ],
-            "featured": "/images/projects/youtube_flutter_clone/Screenshot_20220801-154759.jpg",
+            "featured": "images/projects/youtube_flutter_clone/Screenshot_20220801-154759.jpg",
             "images": [
-                "/images/projects/youtube_flutter_clone/Screenshot_20220801-154759.jpg",
-				"/images/projects/youtube_flutter_clone/Screenshot_20220801-154828.jpg",
-				"/images/projects/youtube_flutter_clone/Screenshot_20220801-154956.jpg",
-				"/images/projects/youtube_flutter_clone/Screenshot_20220801-155016.jpg",
-				"/images/projects/youtube_flutter_clone/Screenshot_20220801-175358.jpg",
-				"/images/projects/youtube_flutter_clone/Screenshot_20220801-172705.jpg",
-				"/images/projects/youtube_flutter_clone/Screenshot_20220801-174716.jpg",
-				"/images/projects/youtube_flutter_clone/Screenshot_20220801-164557.jpg",
-				"/images/projects/youtube_flutter_clone/Screenshot_20220801-164616.jpg",
-				"/images/projects/youtube_flutter_clone/Screenshot_20220801-160508.jpg"
+                "images/projects/youtube_flutter_clone/Screenshot_20220801-154759.jpg",
+				"images/projects/youtube_flutter_clone/Screenshot_20220801-154828.jpg",
+				"images/projects/youtube_flutter_clone/Screenshot_20220801-154956.jpg",
+				"images/projects/youtube_flutter_clone/Screenshot_20220801-155016.jpg",
+				"images/projects/youtube_flutter_clone/Screenshot_20220801-175358.jpg",
+				"images/projects/youtube_flutter_clone/Screenshot_20220801-172705.jpg",
+				"images/projects/youtube_flutter_clone/Screenshot_20220801-174716.jpg",
+				"images/projects/youtube_flutter_clone/Screenshot_20220801-164557.jpg",
+				"images/projects/youtube_flutter_clone/Screenshot_20220801-164616.jpg",
+				"images/projects/youtube_flutter_clone/Screenshot_20220801-160508.jpg"
             ],
             "github": "https://github.com/desmond700/flutter_youtube_clone",
             "created": 1629522000000
@@ -30,16 +30,16 @@
                 "flutter",
                 "dart"
             ],
-            "featured": "/images/projects/whatsapp_flutter_clone/20220718_145930.gif",
+            "featured": "images/projects/whatsapp_flutter_clone/20220718_145930.gif",
             "images": [
-                "/images/projects/whatsapp_flutter_clone/20220718_145930.gif",
-                "/images/projects/whatsapp_flutter_clone/20220718_150729.gif",
-                "/images/projects/whatsapp_flutter_clone/20220718_151750.gif",
-                "/images/projects/whatsapp_flutter_clone/Screenshot_20220718_155554_com.example.whatsapp_clone.jpeg",
-                "/images/projects/whatsapp_flutter_clone/Screenshot_20220718_155625_com.example.whatsapp_clone.jpeg",
-                "/images/projects/whatsapp_flutter_clone/Screenshot_20220718_155630_com.example.whatsapp_clone.jpeg",
-                "/images/projects/whatsapp_flutter_clone/Screenshot_20220718_180348_com.example.whatsapp_clone.jpeg",
-                "/images/projects/whatsapp_flutter_clone/Screenshot_20220718_155701_com.example.whatsapp_clone.jpeg"
+                "images/projects/whatsapp_flutter_clone/20220718_145930.gif",
+                "images/projects/whatsapp_flutter_clone/20220718_150729.gif",
+                "images/projects/whatsapp_flutter_clone/20220718_151750.gif",
+                "images/projects/whatsapp_flutter_clone/Screenshot_20220718_155554_com.example.whatsapp_clone.jpeg",
+                "images/projects/whatsapp_flutter_clone/Screenshot_20220718_155625_com.example.whatsapp_clone.jpeg",
+                "images/projects/whatsapp_flutter_clone/Screenshot_20220718_155630_com.example.whatsapp_clone.jpeg",
+                "images/projects/whatsapp_flutter_clone/Screenshot_20220718_180348_com.example.whatsapp_clone.jpeg",
+                "images/projects/whatsapp_flutter_clone/Screenshot_20220718_155701_com.example.whatsapp_clone.jpeg"
             ],
             "github": "https://github.com/desmond700/flutter_whatsapp_clone",
             "created": 1637470800000
@@ -51,21 +51,21 @@
                 "flutter",
                 "dart"
             ],
-            "featured": "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_231701_com.example.flutter_scotiabank_clone.jpeg",
+            "featured": "images/projects/scotiabank_flutter_clone/Screenshot_20220718_231701_com.example.flutter_scotiabank_clone.jpeg",
             "images": [
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_220344_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_231701_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_214718_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_214729_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_214738_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_225741_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_214745_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_214806_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/20220718_220207.gif",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_220332_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_220401_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_220404_com.example.flutter_scotiabank_clone.jpeg",
-                "/images/projects/scotiabank_flutter_clone/Screenshot_20220718_220442_com.example.flutter_scotiabank_clone.jpeg"
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_220344_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_231701_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_214718_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_214729_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_214738_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_225741_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_214745_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_214806_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/20220718_220207.gif",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_220332_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_220401_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_220404_com.example.flutter_scotiabank_clone.jpeg",
+                "images/projects/scotiabank_flutter_clone/Screenshot_20220718_220442_com.example.flutter_scotiabank_clone.jpeg"
             ],
             "github": "https://github.com/desmond700/flutter_scotiabank_clone",
             "created": 1629522000000
@@ -77,29 +77,29 @@
                 "flutter",
                 "dart"
             ],
-            "featured": "/images/projects/instagram_flutter_clone/Screenshot_20220801-180626.jpg",
+            "featured": "images/projects/instagram_flutter_clone/Screenshot_20220801-180626.jpg",
             "images": [
-                "/images/projects/instagram_flutter_clone/Screenshot_20220801-180626.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180632.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180638.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180645.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180649.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180659.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180706.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180711.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180953.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181013.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181019.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181032.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181105.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181112.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181118.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181125.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181137.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181154.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181211.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181217.jpg",
-				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181223.jpg"
+                "images/projects/instagram_flutter_clone/Screenshot_20220801-180626.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-180632.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-180638.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-180645.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-180649.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-180659.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-180706.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-180711.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-180953.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181013.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181019.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181032.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181105.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181112.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181118.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181125.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181137.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181154.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181211.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181217.jpg",
+				"images/projects/instagram_flutter_clone/Screenshot_20220801-181223.jpg"
             ],
             "github": "https://github.com/desmond700/flutter_instagram_clone",
             "created": 1629522000000
@@ -111,12 +111,12 @@
                 "flutter",
                 "dart"
             ],
-            "featured": "/images/projects/facebook_flutter_clone/20220718_190728.gif",
+            "featured": "images/projects/facebook_flutter_clone/20220718_190728.gif",
             "images": [
-                "/images/projects/facebook_flutter_clone/20220718_190728.gif",
-                "/images/projects/facebook_flutter_clone/Screenshot_20220718_190435_com.example.facebook_clone.jpeg",
-                "/images/projects/facebook_flutter_clone/Screenshot_20220718_190447_com.example.facebook_clone.jpeg",
-                "/images/projects/facebook_flutter_clone/Screenshot_20220718_190515_com.example.facebook_clone.jpeg"
+                "images/projects/facebook_flutter_clone/20220718_190728.gif",
+                "images/projects/facebook_flutter_clone/Screenshot_20220718_190435_com.example.facebook_clone.jpeg",
+                "images/projects/facebook_flutter_clone/Screenshot_20220718_190447_com.example.facebook_clone.jpeg",
+                "images/projects/facebook_flutter_clone/Screenshot_20220718_190515_com.example.facebook_clone.jpeg"
             ],
             "github": "https://github.com/desmond700/flutter_facebook_clone",
             "created": 1629522000000
@@ -128,11 +128,11 @@
                 "flutter",
                 "dart"
             ],
-            "featured": "/images/projects/netflix_flutter_clone/Screenshot_20220719_135817_com.example.flutter_netflix_clone.jpeg",
+            "featured": "images/projects/netflix_flutter_clone/Screenshot_20220719_135817_com.example.flutter_netflix_clone.jpeg",
             "images": [
-                "/images/projects/netflix_flutter_clone/Screenshot_20220719_135800_com.example.flutter_netflix_clone.jpeg",
-                "/images/projects/netflix_flutter_clone/Screenshot_20220719_135817_com.example.flutter_netflix_clone.jpeg",
-                "/images/projects/netflix_flutter_clone/20220719_140420.gif"
+                "images/projects/netflix_flutter_clone/Screenshot_20220719_135800_com.example.flutter_netflix_clone.jpeg",
+                "images/projects/netflix_flutter_clone/Screenshot_20220719_135817_com.example.flutter_netflix_clone.jpeg",
+                "images/projects/netflix_flutter_clone/20220719_140420.gif"
             ],
             "github": "https://github.com/desmond700/flutter_netflix_clone",
             "created": 1629522000000

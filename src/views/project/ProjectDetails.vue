@@ -17,6 +17,7 @@ defineEmits(["on-close"]);
 
 const selectImage = ref(props.project.featured);
 const screenshots = computed(() => props.project.images);
+const baseUrl = import.meta.env.BASE_URL;
 
 const previous = () => {
   let currentIndex = screenshots.value.findIndex(
@@ -73,7 +74,7 @@ const next = () => {
           :class="{ active: selectImage === imageUrl }"
           :key="index"
         >
-          <img :src="imageUrl" />
+          <img :src="baseUrl + imageUrl" />
         </span>
       </div>
     </div>

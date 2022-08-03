@@ -11,6 +11,7 @@ const props = defineProps<{
 
 const created = computed(() => millisecondsToDate(props.project.created));
 const toggleProjectDetails = ref(false);
+const baseUrl = import.meta.env.BASE_URL;
 </script>
 
 <template>
@@ -21,7 +22,7 @@ const toggleProjectDetails = ref(false);
     <img
       v-if="$props.project.featured !== ''"
       id="featured-img"
-      :src="$props.project.featured"
+      :src="baseUrl + $props.project.featured"
     />
 
     <div id="project-item-content">

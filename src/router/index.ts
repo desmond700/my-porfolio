@@ -6,14 +6,16 @@ import {
 
 const app_name = "My Portfolio";
 const baseUrl = import.meta.env.BASE_URL;
+console.log("baseUrl: ", baseUrl);
+console.log("import.meta.url: ", import.meta.url);
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: baseUrl,
-    redirect: baseUrl + "about",
+    redirect: "/about",
   },
   {
-    path: baseUrl + "about",
+    path: "/about",
     name: "about",
     meta: {
       pageTitle: `${app_name} - About Page`,
@@ -23,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/About.vue"),
   },
   {
-    path: baseUrl + "skills",
+    path: "/skills",
     name: "skills",
     meta: {
       pageTitle: `${app_name} - Skills Page`,
@@ -33,7 +35,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/Skills.vue"),
   },
   {
-    path: baseUrl + "projects",
+    path: "/projects",
     name: "projects",
     meta: {
       showProjectDetails: false,
@@ -44,7 +46,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/project/ProjectList.vue"),
   },
   {
-    path: baseUrl + ":pathMatch(.*)*",
+    path: "/:pathMatch(.*)*",
     name: "NotFound",
     meta: {
       pageTitle: `${app_name} - Page not found`,

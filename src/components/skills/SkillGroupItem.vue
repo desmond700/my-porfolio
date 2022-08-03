@@ -7,13 +7,18 @@ defineProps<{
   imageSrc: string;
   itemStyle?: StyleValue;
 }>();
+
+const baseUrl = import.meta.env.BASE_URL;
 </script>
 
 <template>
   <div class="skill-group-item">
     <div id="item-info" :style="$props.itemStyle">
       <p id="label">{{ $props.label }}</p>
-      <img :src="`/images/skills/${$props.imageSrc}`" alt="skills item logo" />
+      <img
+        :src="baseUrl + `images/skills/${$props.imageSrc}`"
+        alt="skills item logo"
+      />
     </div>
     <div id="progress-bar-container">
       <div id="progress-bar" :style="{ width: `${$props.percentage}%` }">
