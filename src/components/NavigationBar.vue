@@ -7,14 +7,14 @@ import SocialMediaButton from "./SocialMediaButton.vue";
 
 const props = withDefaults(
   defineProps<{
-    toggleNavBar: boolean;
+    toggleNavbar: boolean;
   }>(),
   {
-    toggleNavBar: false,
+    toggleNavbar: false,
   }
 );
 
-defineEmits(["on-close-navbar"]);
+defineEmits(["close-navbar"]);
 
 const route = useRoute();
 const showNav = ref<boolean>();
@@ -79,12 +79,12 @@ function navItemSelection(globalColor: GlobalColor): void {
 }
 
 watch(
-  () => props.toggleNavBar,
-  (toggleNavBar) => {
-    console.log("toggleNavBar: ", toggleNavBar);
+  () => props.toggleNavbar,
+  (toggleNavbar) => {
+    console.log("toggleNavbar: ", toggleNavbar);
     if (navigationBar.value === undefined) return;
 
-    navigationBar.value.style.marginLeft = toggleNavBar ? "0" : "-250px";
+    navigationBar.value.style.marginLeft = toggleNavbar ? "0" : "-250px";
   }
 );
 
@@ -128,7 +128,7 @@ defineExpose({
 
 <template>
   <div ref="navigationBar" id="navbar">
-    <button id="navbar-close" @click="$emit('on-close-navbar')">
+    <button id="navbar-close" @click="$emit('close-navbar')">
       <Close id="icon" />
     </button>
     <div id="navheading">
@@ -143,14 +143,14 @@ defineExpose({
       <div>
         <p id="name">Desmond Wallace</p>
         <div class="horizontal-divider"></div>
-        <p id="career">Application Developer</p>
+        <p id="career">Mobile Developer</p>
       </div>
     </div>
     <div class="social-media">
       <SocialMediaButton :href="'https://github.com/desmond700'">
         <i class="fab fa-github"></i>
       </SocialMediaButton>
-      <SocialMediaButton :href="'#'">
+      <SocialMediaButton :href="'https://facebook.com/desmond700'">
         <i class="fab fa-facebook-f"></i>
       </SocialMediaButton>
       <SocialMediaButton

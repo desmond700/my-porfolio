@@ -22,6 +22,7 @@ defineProps<{
   #skill-label {
     width: fit-content;
     margin-bottom: 15px;
+    text-align: left;
     font-size: 1.4em;
     font-weight: 600;
     color: var(--secondary-color);

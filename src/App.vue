@@ -2,23 +2,30 @@
 import { RouterView } from "vue-router";
 import { ref } from "vue";
 import NavigationBar from "./components/NavigationBar.vue";
-import ProjectListHeader from "./components/ProjectListHeader.vue";
+import PageHeader from "./components/PageHeader.vue";
 
-const toggleNavBar = ref(false);
+const showNavBar = ref(false);
+
+function toggleNavBar(value: boolean) {
+  console.log("toggleNavBar: value ", value);
+  showNavBar.value = value;
+}
 </script>
 
 <template>
   <navigation-bar
-    :toggleNavBar="toggleNavBar"
-    @on-close-navbar="toggleNavBar = false"
+    :toggle-navbar="showNavBar"
+    @close-navbar="toggleNavBar(false)"
   />
-
+  <div
+    id="overlay"
+    :style="{ display: showNavBar ? 'block' : 'none' }"
+    @click="showNavBar = false"
+  ></div>
   <div id="main">
-    <project-list-header @on-open-navbar="toggleNavBar = true" />
-    <div id="scroll-container">
-      <div id="content">
-        <router-view />
-      </div>
+    <PageHeader @open-navbar="toggleNavBar(true)" />
+    <div id="content">
+      <router-view />
     </div>
   </div>
 </template>
@@ -29,32 +36,37 @@ const toggleNavBar = ref(false);
 @import "@/styles/media-queries.scss";
 
 #app {
+  position: relative;
   display: flex;
   height: calc(100vh - 1px);
   text-align: center;
   color: #2c3e50;
   overflow: hidden;
-}
 
-#main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  height: 100%;
-  // padding: 0 30px;
-  background-color: var(--primary-color);
+  #overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+  }
 
-  #scroll-container {
+  #main {
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    background-color: var(--primary-color);
     overflow-y: auto;
     overflow-x: hidden;
+    z-index: 2;
 
     #content {
       display: flex;
       position: relative;
-      flex-grow: 1;
       min-height: calc(100vh - var(--app-header-height));
-      margin-top: var(--app-header-height);
       padding: 0 30px;
       background-color: #fff;
       border-top-left-radius: 30px;

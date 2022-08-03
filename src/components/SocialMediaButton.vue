@@ -13,6 +13,7 @@ defineProps<{
 <style lang="scss" scoped>
 .social-media-icon {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 28px;
   height: 26px;

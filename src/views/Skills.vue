@@ -38,7 +38,7 @@ const skillsData = skillsJson as SkillDataRecord;
   flex-direction: column;
   flex-grow: 1;
   width: 80%;
-  margin: 50px 30px 0 30px;
+  margin: 50px 50px 0 30px;
 
   #skills-label {
     margin: 20px 0;

@@ -7,12 +7,12 @@
         },
         {
             "name": "Typescript",
-            "knowledge": 85,
+            "knowledge": 70,
             "imageName": "typescript-programming-language.png"
         },
         {
             "name": "SQL",
-            "knowledge": 70,
+            "knowledge": 60,
             "imageName": "database-icon.png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "name": "Flutter",
-            "knowledge": 50,
+            "knowledge": 75,
             "imageName": "flutter.png"
         }
     ],
     "Frontend frameworks": [
         {
             "name": "VueJs",
-            "knowledge": 66,
+            "knowledge": 65,
             "imageName": "vuejs.png"
         }
     ]

@@ -77,7 +77,7 @@ const handleBlur = () => {
   position: relative;
   display: flex;
   align-items: center;
-  height: 28px;
+  height: 30px !important;
   z-index: 2;
 
   #label {
@@ -96,7 +96,7 @@ const handleBlur = () => {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 100%;
+      height: 30px;
       flex-grow: 1;
       border: 2px solid var(--primary-color);
       cursor: pointer;
@@ -115,10 +115,7 @@ const handleBlur = () => {
     }
 
     #dropdown-content {
-      position: absolute;
-      top: 30px;
-      left: 0;
-      right: 0;
+      margin-top: -2px;
       border: 2px solid var(--primary-color);
 
       &:focus {

@@ -1,7 +1,10 @@
+<!-- eslint-disable prettier/prettier -->
 <script setup lang="ts">
 import type { IProject } from "../../types";
 import { Close, ChevronLeft, ChevronRight } from "mdue";
-import { type PropType, ref, computed } from "vue";
+import { ref, computed } from "vue";
+import type { PropType } from "vue";
+import ProjectDetailsHeader from "@/components/ProjectDetailsHeader.vue";
 
 const props = defineProps({
   project: {
@@ -58,10 +61,10 @@ const next = () => {
     <div id="project-description-container">
       <p id="project-name">{{ $props.project.projectName }}</p>
       <p id="project-description">{{ $props.project.description }}</p>
-      <button id="github-btn">
-        <i class="fab fa-github"></i>
+      <a id="github-btn" target="_blank" :href="$props.project.github">
+        <i class="fab fa-github"></i>&nbsp;
         <span id="label">View on Github</span>
-      </button>
+      </a>
       <div id="screenshots-container">
         <span
           class="screenshot-item"
@@ -75,6 +78,11 @@ const next = () => {
       </div>
     </div>
     <div id="preview-container">
+      <ProjectDetailsHeader
+        :project="$props.project"
+        :text-color="'#fff'"
+        :github-button-text-color="'#000'"
+      />
       <img id="preview-image" v-if="selectImage != ''" :src="selectImage" />
       <button id="previous" @click="previous">
         <ChevronLeft class="icon" />
@@ -82,6 +90,24 @@ const next = () => {
       <button id="next" @click="next">
         <ChevronRight class="icon" />
       </button>
+      <div id="screenshots-preview-container">
+        <!-- <span
+          class="screenshot-item"
+          v-for="(imageUrl, index) in $props.project.images"
+          @click="selectImage = imageUrl"
+          :class="{ active: selectImage === imageUrl }"
+          :key="index"
+        > -->
+        <img
+          class="screenshot-item"
+          v-for="(imageUrl, index) in $props.project.images"
+          @click="selectImage = imageUrl"
+          :class="{ active: selectImage === imageUrl }"
+          :src="imageUrl"
+          :key="index"
+        />
+        <!-- </span> -->
+      </div>
     </div>
   </div>
 </template>
@@ -119,6 +145,7 @@ const next = () => {
   #project-description-container {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     flex-grow: 1;
     max-height: 100%;
     padding: 15px 20px;
@@ -138,15 +165,35 @@ const next = () => {
       color: var(--primary-color);
     }
 
-    button#github-btn {
+    a#github-btn {
       display: flex;
-      width: fit-content;
-      padding: 5px;
+      width: 141px;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(216, 216, 216);
+      text-decoration: none;
+      color: rgb(0, 102, 255);
       cursor: pointer;
 
+      &:hover {
+        border: 1px solid transparent;
+        background-color: rgb(27, 27, 27);
+
+        i {
+          color: #fff;
+        }
+
+        #label {
+          color: #fff;
+        }
+      }
+
       #label {
-        margin-left: 4px;
+        margin-left: 5px;
         font-size: 0.9em;
+        white-space: nowrap;
       }
     }
 
@@ -155,7 +202,6 @@ const next = () => {
       grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
       grid-template-rows: auto;
       gap: 10px;
-      flex-grow: 1;
       margin-top: 20px;
 
       .active {
@@ -186,7 +232,8 @@ const next = () => {
   #preview-container {
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 40%;
     padding: 30px 20px;
     background-color: #000;
@@ -198,9 +245,39 @@ const next = () => {
       }
     }
 
-    #preview-image {
-      height: auto;
-      width: auto;
+    img#preview-image {
+      max-height: 100%;
+      max-width: 100%;
+      max-width: 100%;
+    }
+
+    #screenshots-preview-container {
+      display: none;
+      flex-shrink: 0;
+      height: 150px;
+      max-width: 100%;
+      margin-top: 10px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+
+      .active {
+        border: 2px solid var(--primary-color);
+      }
+
+      .screenshot-item {
+        max-height: 100%;
+        width: auto;
+        cursor: pointer;
+
+        // &:hover {
+        //   transform: scale(0.5, 0.5);
+        // }
+
+        &:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
     }
 
     button#previous,

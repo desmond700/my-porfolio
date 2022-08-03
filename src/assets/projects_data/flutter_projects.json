@@ -2,21 +2,30 @@
     "flutter_projects": [
         {
             "projectName": "Youtube Flutter Clone",
-            "description": "This project a simple YouTube clone made using the Flutter SDK. \nIt consist of the ",
+            "description": "This project is a simple YouTube clone made using the Flutter SDK. It consist of the home, story, subscription, library, watch, profile page etc. Video playback is current only possible in the watch page. Information is static and is served via JSON file.",
             "technologies": [
                 "flutter",
                 "dart"
             ],
-            "featured": "",
+            "featured": "/images/projects/youtube_flutter_clone/Screenshot_20220801-154759.jpg",
             "images": [
-                "/images/youtube_flutter_clone/"
+                "/images/projects/youtube_flutter_clone/Screenshot_20220801-154759.jpg",
+				"/images/projects/youtube_flutter_clone/Screenshot_20220801-154828.jpg",
+				"/images/projects/youtube_flutter_clone/Screenshot_20220801-154956.jpg",
+				"/images/projects/youtube_flutter_clone/Screenshot_20220801-155016.jpg",
+				"/images/projects/youtube_flutter_clone/Screenshot_20220801-175358.jpg",
+				"/images/projects/youtube_flutter_clone/Screenshot_20220801-172705.jpg",
+				"/images/projects/youtube_flutter_clone/Screenshot_20220801-174716.jpg",
+				"/images/projects/youtube_flutter_clone/Screenshot_20220801-164557.jpg",
+				"/images/projects/youtube_flutter_clone/Screenshot_20220801-164616.jpg",
+				"/images/projects/youtube_flutter_clone/Screenshot_20220801-160508.jpg"
             ],
             "github": "https://github.com/desmond700/flutter_youtube_clone",
             "created": 1629522000000
         },
         {
             "projectName": "WhatsApp Flutter Clone",
-            "description": "This project a simple WhatsApp clone made using the Flutter SDK. \nIt consist of the ",
+            "description": "This project is a simple WhatsApp clone made using the Flutter SDK. It consist of the chats, status, calls, camera, message and settings page. Sending message isn't functional, all data is static.",
             "technologies": [
                 "flutter",
                 "dart"
@@ -37,7 +46,7 @@
         },
         {
             "projectName": "Scotiabank Flutter Clone",
-            "description": "This project a simple YouTube clone made using the Flutter SDK. \nIt consist of the ",
+            "description": "This project is a simple YouTube clone made using the Flutter SDK. It consist of the accounts, transfers, deposita cheque, transfer between accounts, bills, more page etc. Information is static.",
             "technologies": [
                 "flutter",
                 "dart"
@@ -63,21 +72,41 @@
         },
         {
             "projectName": "Instagram Flutter Clone",
-            "description": "This project a simple YouTube clone made using the Flutter SDK. \nIt consist of the ",
+            "description": "This project is a simple YouTube clone made using the Flutter SDK. It consist of the post-feed, search, reel, activity, profile, chat, message, camera, story page etc. Data is static and is served via JSON files. The search page doesn't have any data inside it yet as well as the galley and new post page.",
             "technologies": [
                 "flutter",
                 "dart"
             ],
-            "featured": "",
+            "featured": "/images/projects/instagram_flutter_clone/Screenshot_20220801-180626.jpg",
             "images": [
-                "/images/instagram_flutter_clone/"
+                "/images/projects/instagram_flutter_clone/Screenshot_20220801-180626.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180632.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180638.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180645.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180649.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180659.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180706.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180711.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-180953.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181013.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181019.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181032.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181105.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181112.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181118.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181125.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181137.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181154.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181211.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181217.jpg",
+				"/images/projects/instagram_flutter_clone/Screenshot_20220801-181223.jpg"
             ],
             "github": "https://github.com/desmond700/flutter_instagram_clone",
             "created": 1629522000000
         },
         {
             "projectName": "Facebook Flutter Clone",
-            "description": "This project a simple YouTube clone made using the Flutter SDK. \nIt consist of the ",
+            "description": "This project is a simple YouTube clone made using the Flutter SDK. \nIt consist of the home and profile page (which is only partly completed). Among pages that aren't completed there are the friends, watch, notifications and more pages. Data is served via JSON files.",
             "technologies": [
                 "flutter",
                 "dart"
@@ -94,7 +123,7 @@
         },
         {
             "projectName": "Netflix Flutter Clone",
-            "description": "This project a simple YouTube clone made using the Flutter SDK. \nIt consist of the ",
+            "description": "This project is a simple Netflix clone made using the Flutter SDK. \nIt consist of the home page among the pages that aren't completed as yet there are the search, coming soon, downloads and more pages.",
             "technologies": [
                 "flutter",
                 "dart"

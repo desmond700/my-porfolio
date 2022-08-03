@@ -112,6 +112,7 @@ onMounted(() => {
     #project-list-label {
       width: fit-content;
       margin: 50px 0 30px 0;
+      text-align: left;
       font-size: 2.6em;
       font-weight: bold;
       color: var(--primary-color);
@@ -120,7 +121,8 @@ onMounted(() => {
     #navigation-bar {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: stretch;
+      height: 30px;
 
       #navigation-list {
         display: flex;
@@ -144,7 +146,7 @@ onMounted(() => {
         button.nav-item {
           position: relative;
           appearance: none;
-          padding: 10px 10px;
+          padding: 8px 10px;
           border: none;
           cursor: pointer;
           color: var(--secondar-color);
