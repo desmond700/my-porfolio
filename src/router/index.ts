@@ -5,14 +5,15 @@ import {
 } from "vue-router";
 
 const app_name = "My Portfolio";
+const baseUrl = import.meta.env.BASE_URL;
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
-    redirect: "/about",
+    path: baseUrl,
+    redirect: baseUrl + "about",
   },
   {
-    path: "/about",
+    path: baseUrl + "about",
     name: "about",
     meta: {
       pageTitle: `${app_name} - About Page`,
@@ -22,7 +23,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/About.vue"),
   },
   {
-    path: "/skills",
+    path: baseUrl + "skills",
     name: "skills",
     meta: {
       pageTitle: `${app_name} - Skills Page`,
@@ -32,7 +33,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/Skills.vue"),
   },
   {
-    path: "/projects",
+    path: baseUrl + "projects",
     name: "projects",
     meta: {
       showProjectDetails: false,
@@ -43,7 +44,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/project/ProjectList.vue"),
   },
   {
-    path: "/:pathMatch(.*)*",
+    path: baseUrl + ":pathMatch(.*)*",
     name: "NotFound",
     meta: {
       pageTitle: `${app_name} - Page not found`,
@@ -51,11 +52,11 @@ const routes: Array<RouteRecordRaw> = [
       routeNavPos: -1,
     },
     component: () => import("../views/PageNotFound.vue"),
-  }
+  },
 ]; // short for `routes: routes`
 
 const router = createRouter({
-  history: createWebHistory("/"),
+  history: createWebHistory(baseUrl),
   routes,
 });
 
