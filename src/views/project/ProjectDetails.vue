@@ -5,18 +5,25 @@ import { Close, ChevronLeft, ChevronRight } from "mdue";
 import { ref, computed } from "vue";
 import type { PropType } from "vue";
 import ProjectDetailsHeader from "@/components/ProjectDetailsHeader.vue";
+import flutterProjectsJson from "../../assets/projects_data/flutter_projects.json";
+import { useRoute, useRouter } from "vue-router";
 
-const props = defineProps({
-  project: {
-    type: Object as PropType<IProject>,
-    required: true,
-  },
-});
+// const props = defineProps({
+//   project: {
+//     type: Object as PropType<IProject>,
+//     required: true,
+//   },
+// });
 
 defineEmits(["on-close"]);
 
-const selectImage = ref(props.project.featured);
-const screenshots = computed(() => props.project.images);
+const route = useRoute();
+const router = useRouter();
+const flutterProjects = flutterProjectsJson["flutter_projects"];
+const project = flutterProjects.find((project) => project.projectName === route.query.name) as IProject;
+// console.log("project ", project);
+const selectImage = ref(project.featured);
+const screenshots = computed(() => project.images);
 const baseUrl = import.meta.env.BASE_URL;
 
 const previous = () => {
@@ -52,24 +59,28 @@ const next = () => {
 
   selectImage.value = screenshots.value[currentIndex];
 };
+
+function goBack() {
+  router.back()
+}
 </script>
 
 <template>
   <div id="project-details-container">
-    <button id="close-btn" @click="$emit('on-close')">
+    <button id="close-btn" @click="goBack()">
       <Close class="icon" />
     </button>
     <div id="project-description-container">
-      <p id="project-name">{{ $props.project.projectName }}</p>
-      <p id="project-description">{{ $props.project.description }}</p>
-      <a id="github-btn" target="_blank" :href="$props.project.github">
+      <p id="project-name">{{ project.projectName }}</p>
+      <p id="project-description">{{ project.description }}</p>
+      <a id="github-btn" target="_blank" :href="project.github">
         <i class="fab fa-github"></i>&nbsp;
         <span id="label">View on Github</span>
       </a>
       <div id="screenshots-container">
         <span
           class="screenshot-item"
-          v-for="(imageUrl, index) in $props.project.images"
+          v-for="(imageUrl, index) in project.images"
           @click="selectImage = imageUrl"
           :class="{ active: selectImage === imageUrl }"
           :key="index"
@@ -80,11 +91,11 @@ const next = () => {
     </div>
     <div id="preview-container">
       <ProjectDetailsHeader
-        :project="$props.project"
+        :project="project"
         :text-color="'#fff'"
         :github-button-text-color="'#000'"
       />
-      <img id="preview-image" v-if="selectImage != ''" :src="selectImage" />
+      <img id="preview-image" v-if="selectImage != ''" :src="baseUrl + selectImage" />
       <button id="previous" @click="previous">
         <ChevronLeft class="icon" />
       </button>
@@ -101,10 +112,10 @@ const next = () => {
         > -->
         <img
           class="screenshot-item"
-          v-for="(imageUrl, index) in $props.project.images"
+          v-for="(imageUrl, index) in project.images"
           @click="selectImage = imageUrl"
           :class="{ active: selectImage === imageUrl }"
-          :src="imageUrl"
+          :src="baseUrl + imageUrl"
           :key="index"
         />
         <!-- </span> -->
@@ -115,12 +126,8 @@ const next = () => {
 
 <style lang="scss" scoped>
 #project-details-container {
-  position: absolute;
-  top: 30px;
-  left: 50px;
-  right: 50px;
-  bottom: 30px;
   display: flex;
+  height: 100%;
   border-radius: 5px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.54);
   background-color: #fff;

@@ -11,7 +11,7 @@ console.log("import.meta.url: ", import.meta.url);
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: baseUrl,
+    path: "/",
     redirect: "/about",
   },
   {
@@ -38,12 +38,21 @@ const routes: Array<RouteRecordRaw> = [
     path: "/projects",
     name: "projects",
     meta: {
-      showProjectDetails: false,
       pageTitle: `${app_name} - Projects Page`,
       pageName: "Projects Page",
       routeNavPos: 2,
     },
     component: () => import("../views/project/ProjectList.vue"),
+    children: [
+      {
+        path: "details",
+        name: "projectDetails",
+        meta: {
+          showProjectDetails: true
+        },
+        component: () => import("../views/project/ProjectDetails.vue")
+      }
+    ]
   },
   {
     path: "/:pathMatch(.*)*",

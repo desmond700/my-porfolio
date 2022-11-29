@@ -12,12 +12,14 @@ const props = defineProps<{
 const created = computed(() => millisecondsToDate(props.project.created));
 const toggleProjectDetails = ref(false);
 const baseUrl = import.meta.env.BASE_URL;
+const projectDetailsUrl = "/projects/" + encodeURIComponent(props.project.projectName);
 </script>
 
 <template>
-  <div
+  <router-link
     class="project-item"
     @click="toggleProjectDetails = !toggleProjectDetails"
+    :to="{name: 'projectDetails', query: {name: $props.project.projectName}}"
   >
     <img
       v-if="$props.project.featured !== ''"
@@ -46,19 +48,7 @@ const baseUrl = import.meta.env.BASE_URL;
       </div>
       <p id="project-created">{{ created }}</p>
     </div>
-
-    <Teleport to="body">
-      <Overlay
-        v-if="toggleProjectDetails"
-        @on-close="toggleProjectDetails = false"
-      >
-        <ProjectDetails
-          :project="$props.project"
-          @on-close="toggleProjectDetails = false"
-        />
-      </Overlay>
-    </Teleport>
-  </div>
+  </router-link>
 </template>
 
 <style lang="scss" scoped>

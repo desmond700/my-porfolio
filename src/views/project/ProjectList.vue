@@ -19,6 +19,8 @@ const projects = ref<Projects>({
   list: cloneDeep(flutterProjects),
 });
 
+const showProjectDetails = ref(false);
+
 const filterList = (filter: ProjectFilter) => {
   console.log("filterList filter: ", filter);
   const { list } = projects.value;
@@ -52,10 +54,16 @@ const filterList = (filter: ProjectFilter) => {
   }
 };
 
-watch(
+watch([
   () => route.query.tag,
-  (tag) => {
+  () => route.meta,
+  () => route.name,
+],([tag, meta, name]) => {
     console.log("query tag: ", tag);
+    console.log("meta: ", meta);
+    console.log("name: ", name);
+    console.log("route: ", route);
+    showProjectDetails.value = (meta as any).showProjectDetails;
   }
 );
 
@@ -66,10 +74,19 @@ onMounted(() => {
   //     list: flutterProjects
   // };
 });
+
+defineExpose({
+  showProjectDetails
+})
 </script>
 
 <template>
   <div id="project-list-page">
+    <Teleport to="body">
+      <div class="modal-container" v-if="showProjectDetails">
+        <router-view></router-view>
+      </div>
+    </Teleport>
     <div id="project-list-header">
       <p id="project-list-label">Project List</p>
       <div id="navigation-bar">
@@ -99,6 +116,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 #project-list-page {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
